@@ -12,7 +12,9 @@ const Header = () => {
     const [humidity, setHumidity] = useState("")
     const [currentTime, setCurrentTime] = useState(new Date());
     const [error, setError] = useState("")
-    const API_Key = import.meta.env.VITE_API_KEY
+    // ------way to get variable from .env------
+    // const API_Key = import.meta.env.VITE_API_KEY
+    const API_Key = "36f695d5e8c244f3ada162038251704"
     const apiAddress = `https://api.weatherapi.com/v1/current.json?key=${API_Key}&q=${name}&aqi=no`
 
     const day = currentTime.toLocaleString('en-US', { weekday: 'long' });
