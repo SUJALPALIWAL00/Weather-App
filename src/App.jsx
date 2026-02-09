@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <div className="bg-[url('bg.jpg')] md:pl-10 bg-cover  h-[100vh] w-[100vw]" >
+    <div className="bg-[url('/bg.jpg')] md:pl-10 bg-cover  h-[100vh] w-[100vw]" >
     <Navbar/>
     <Header/>
     </div>
